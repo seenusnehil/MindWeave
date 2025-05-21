@@ -13,4 +13,4 @@ This project is currently in early development. Stay tuned as we build out core 
 
 ---
 
-**Use Cases**: Personal knowledge management, research thinking, creative workflows, idea exploration, brainstroming, creative writing and much more!
+**Use Cases**: Personal knowledge management, research thinking, creative writing, idea exploration, brainstroming, note taking and much more!
