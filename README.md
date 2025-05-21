@@ -2,6 +2,9 @@
 
 **MindWeave** is an experimental AI-powered thinking tool designed to help users capture, connect, and explore their ideas more intelligently.
 
+![MindWeave Demo](assets/mindweave_demo.gif)
+
+
 At its core, it builds a dynamic network of thoughts — turning disconnected notes into a meaningful web of understanding.
 
 > Think of it as a second brain that grows with you.
