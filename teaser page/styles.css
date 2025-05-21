@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 10;
+}
+
+.small-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    color: #ffffff;
+    
+}
+
+.canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#graph-canvas {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.brain-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+    animation-delay: 0.2s;
+    pointer-events: none;
+}
+
+.brain-svg {
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    animation: pulse 6s infinite ease-in-out;
+}
+
+.main-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.main-logo {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 1s;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.title {
+    font-size: 5.5rem;
+    font-weight: 800;
+    letter-spacing: 10px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+
+
+.time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+}
+
+.number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    opacity: 0.7;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+.notify-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.email-input {
+    padding: 12px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1rem;
+    min-width: 300px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.email-input:focus {
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.notify-btn {
+    padding: 12px 24px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 1.2rem;
+}
+
+.notify-btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    z-index: 10;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.1; }
+    50% { transform: scale(1.03); opacity: 0.2; }
+    100% { transform: scale(1); opacity: 0.1; }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+        letter-spacing: 6px;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+        padding: 0 20px;
+    }
+    
+    .brain-container {
+        max-width: 90%;
+        max-height: 90%;
+    }
+    
+    .countdown {
+        gap: 10px;
+    }
+    
+    .time-unit {
+        min-width: 60px;
+    }
+    
+    .number {
+        font-size: 2rem;
+    }
+    
+    .notify-section {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    
+    .email-input {
+        min-width: 100%;
+    }
+    
+    .notify-btn {
+        min-width: 100%;
+    }
+}
