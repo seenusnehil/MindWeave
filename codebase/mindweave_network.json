@@ -1,0 +1,108 @@
+{
+  "thoughts": [
+    {
+      "id": 1768419974.571244,
+      "content": "Machine learning can help us understand patterns in data #AI #learning",
+      "tags": [
+        "AI",
+        "learning"
+      ],
+      "timestamp": "2026-01-14T20:46:14.571248"
+    },
+    {
+      "id": 1768419974.57132,
+      "content": "Neural networks are inspired by the human brain #AI #neuroscience",
+      "tags": [
+        "AI",
+        "neuroscience"
+      ],
+      "timestamp": "2026-01-14T20:46:14.571321"
+    },
+    {
+      "id": 1768419974.572579,
+      "content": "Deep learning requires large amounts of training data #AI #data",
+      "tags": [
+        "AI",
+        "data"
+      ],
+      "timestamp": "2026-01-14T20:46:14.572581"
+    },
+    {
+      "id": 1768419974.573116,
+      "content": "Reading books expands our knowledge and perspective #learning #books",
+      "tags": [
+        "learning",
+        "books"
+      ],
+      "timestamp": "2026-01-14T20:46:14.573117"
+    },
+    {
+      "id": 1768419974.573622,
+      "content": "The best way to learn is through practice and iteration #learning #growth",
+      "tags": [
+        "learning",
+        "growth"
+      ],
+      "timestamp": "2026-01-14T20:46:14.573623"
+    },
+    {
+      "id": 1768419974.574122,
+      "content": "Meditation helps improve focus and mental clarity #mindfulness #health",
+      "tags": [
+        "mindfulness",
+        "health"
+      ],
+      "timestamp": "2026-01-14T20:46:14.574123"
+    },
+    {
+      "id": 1768419974.574627,
+      "content": "Regular exercise is important for both physical and mental health #health #fitness",
+      "tags": [
+        "health",
+        "fitness"
+      ],
+      "timestamp": "2026-01-14T20:46:14.574628"
+    },
+    {
+      "id": 1768419974.575149,
+      "content": "Knowledge graphs can represent complex relationships between concepts #data #networks",
+      "tags": [
+        "data",
+        "networks"
+      ],
+      "timestamp": "2026-01-14T20:46:14.575150"
+    },
+    {
+      "id": 1768419974.575673,
+      "content": "The human brain has remarkable plasticity and adaptability #neuroscience #learning",
+      "tags": [
+        "neuroscience",
+        "learning"
+      ],
+      "timestamp": "2026-01-14T20:46:14.575674"
+    },
+    {
+      "id": 1768419974.576272,
+      "content": "Continuous learning is essential in a rapidly changing world #learning #growth",
+      "tags": [
+        "learning",
+        "growth"
+      ],
+      "timestamp": "2026-01-14T20:46:14.576273"
+    }
+  ],
+  "connections": [
+    {
+      "from": 1768419974.571244,
+      "to": 1768419974.572579,
+      "weight": 0.21919019132724565,
+      "reason": "Shared tags: AI"
+    },
+    {
+      "from": 1768419974.57132,
+      "to": 1768419974.575673,
+      "weight": 0.25597988510929653,
+      "reason": "Shared tags: neuroscience"
+    }
+  ]
+}
